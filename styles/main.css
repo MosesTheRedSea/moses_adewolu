@@ -556,14 +556,31 @@ ________________________________________________________________________________
     outline: 4px solid #FFF;
 }
 
+.individual-project img{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .individual-project {
+        width: calc(50% - 20px); /* Adjust project container width for smaller screens */
+        height: 300px;  /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .individual-project {
+        width: 100%; /* Full-width project containers on very small screens (like phones) */
+        height: 250px; /* Adjust height for mobile */
+    }
+}
 
 /*
 ░█▀▀█ ─█▀▀█ ░█▀▀█ ░█▀▀▄ 　 ─█▀▀█ ░█▄─░█ ▀█▀ ░█▀▄▀█ ─█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█ 
 ░█─── ░█▄▄█ ░█▄▄▀ ░█─░█ 　 ░█▄▄█ ░█░█░█ ░█─ ░█░█░█ ░█▄▄█ ─░█── ░█─ ░█──░█ ░█░█░█ 
 ░█▄▄█ ░█─░█ ░█─░█ ░█▄▄▀ 　 ░█─░█ ░█──▀█ ▄█▄ ░█──░█ ░█─░█ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█
 */
-
-
 
 /*
 ░█▀▀█ ░█▀▀█ ░█▀▀▀█ ───░█ ░█▀▀▀ ░█▀▀█ ▀▀█▀▀ ░█▀▀▀█ 　 ░█▀▀▀ ░█▄─░█ ░█▀▀▄ 
