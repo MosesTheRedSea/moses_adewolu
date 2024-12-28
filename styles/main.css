@@ -78,7 +78,7 @@ body {
 #home {
     text-align: center;
     font-size: 2vw; /* Scale based on viewport width */
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -429,11 +429,10 @@ _____________________________________________________________________________
 
 .boxes-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;  
+    justify-content: center;
     gap: 15px;      
     margin: 20px 0;   
-    justify-content: center; 
 }
 
 .box {
@@ -461,6 +460,10 @@ _____________________________________________________________________________
 .box i {
     position: absolute;
     font-size: 60px; 
+}
+
+.skill-text{
+    color: #1877f2;
 }
 
 /*
@@ -501,21 +504,66 @@ ________________________________________________________________________________
 .search-bar-container{
     margin-top: 35px;
     display: flex;
+    align-self: center;
     align-items: center;
-    justify-content: space-betweeen;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
 }
 
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
+.search{
+    border: 2px solid white; 
+    outline: none; 
+    background-color: #1c1c22;
+    color: #FFFFFF;
     padding: 10px 25px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 15px;
     flex: 1;
     font-size: 18px;
 }
+
+.project-container{
+    margin-top: 40px;
+    width: 80%;
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Space out projects evenly */
+    max-width: 1200px; 
+    padding: 0; 
+}
+
+.individual-project {
+    width: calc(33.33% - 20px); 
+    height: 370px;
+    background-color: #232329;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.individual-project:hover {
+    transform: scale(1.1); 
+    outline: 4px solid #FFF;
+}
+
+
+/*
+░█▀▀█ ─█▀▀█ ░█▀▀█ ░█▀▀▄ 　 ─█▀▀█ ░█▄─░█ ▀█▀ ░█▀▄▀█ ─█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█ 
+░█─── ░█▄▄█ ░█▄▄▀ ░█─░█ 　 ░█▄▄█ ░█░█░█ ░█─ ░█░█░█ ░█▄▄█ ─░█── ░█─ ░█──░█ ░█░█░█ 
+░█▄▄█ ░█─░█ ░█─░█ ░█▄▄▀ 　 ░█─░█ ░█──▀█ ▄█▄ ░█──░█ ░█─░█ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█
+*/
+
+
 
 /*
 ░█▀▀█ ░█▀▀█ ░█▀▀▀█ ───░█ ░█▀▀▀ ░█▀▀█ ▀▀█▀▀ ░█▀▀▀█ 　 ░█▀▀▀ ░█▄─░█ ░█▀▀▄ 
@@ -641,7 +689,6 @@ ________________________________________________________________________________
 ______________________________________________________________________________
 */
 /*
-
 ░█▀▀█ ░█▀▀▀█ ░█▄─░█ ▀▀█▀▀ ─█▀▀█ ░█▀▀█ ▀▀█▀▀ 　 ░█▀▀▀█ ▀▀█▀▀ ─█▀▀█ ░█▀▀█ ▀▀█▀▀ 
 ░█─── ░█──░█ ░█░█░█ ─░█── ░█▄▄█ ░█─── ─░█── 　 ─▀▀▀▄▄ ─░█── ░█▄▄█ ░█▄▄▀ ─░█── 
 ░█▄▄█ ░█▄▄▄█ ░█──▀█ ─░█── ░█─░█ ░█▄▄█ ─░█── 　 ░█▄▄▄█ ─░█── ░█─░█ ░█─░█ ─░█──
