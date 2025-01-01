@@ -3,6 +3,7 @@
 ░█░█░█ ░█▀▀▀ ░█▀▀▄ ─▀▀▀▄▄ ░█─ ─░█── ░█▀▀▀ 　 ─▀▀▀▄▄ ─░█── ░█▄▄▀ ░█─░█ ░█─── ─░█── ░█─░█ ░█▄▄▀ ░█▀▀▀ 
 ░█▄▀▄█ ░█▄▄▄ ░█▄▄█ ░█▄▄▄█ ▄█▄ ─░█── ░█▄▄▄ 　 ░█▄▄▄█ ─░█── ░█─░█ ─▀▄▄▀ ░█▄▄█ ─░█── ─▀▄▄▀ ░█─░█ ░█▄▄▄
 */
+
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('.navbar a');
     const homepage = document.querySelector('.home-frame');
